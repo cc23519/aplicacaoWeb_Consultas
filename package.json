@@ -1,0 +1,25 @@
+{
+  "name": "aplicacaoweb_consultas",
+  "version": "1.0.0",
+  "description": "Aplicação WEB usando Express, Nodemon, EJS, Node.JS, Conexão banco de dados SQLITE e Promise.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cc23519/aplicacaoWeb_Consultas.git"
+  },
+  "author": "Guilherme Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cc23519/aplicacaoWeb_Consultas/issues"
+  },
+  "homepage": "https://github.com/cc23519/aplicacaoWeb_Consultas#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "sqlite": "^5.1.1"
+  }
+}
