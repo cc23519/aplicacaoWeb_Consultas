@@ -1,18 +1,15 @@
-const sql = require('mssql');
+const sqlite3 = require('sqlite3').verbose();
 
-const configuracao = {
-    user: 'BD23519',
-    password: 'BD23519',
-    server: 'regulus.unicamp',
-    database: 'BD23519',
-};
+const caminhoBanco = './caminho/do/seu/banco.db';
 
-const banco = new sql.ConnectionPool(configuracao);
-
-banco.connect().then((pool) => {
-    console.log('Conectado ao banco de dados MSSQL');
-}).catch((err) => {
-    console.error('Erro ao conectar ao banco de dados:', err);
+const banco = new sqlite3.Database(caminhoBanco, (err) => {
+  if (err) {
+    console.error('Erro ao abrir o banco de dados:', err.message);
+  } else {
+    console.log('Conectado ao banco de dados SQLite');
+  }
 });
 
+
 module.exports = banco;
+

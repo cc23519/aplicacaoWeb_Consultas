@@ -1,10 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title><%= title %></title>
-  <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja bem vindo ao Consultório Médico GuiMed</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script type="text/javascript" src="/js/script.js"></script>  
 </head>
 <body>
-  <h1><%= title %></h1>
+    <div class="containerMaior">
+        <div class="containerTitulo">
+            <h1>Consultório Médico GuiMed</h1>
+        </div>
+        <div class="containerSubTitulos">
+            <h1>Entrar no sistema</h1>
+        </div>
+        <div class="containerLogin">
+            <div class="formularioLoginPaciente">
+                <h2>Login de Paciente</h2>
+                <form>
+                    <label for="emailPaciente" id="labelemailPaciente">E-mail:</label>
+                    <input type="email" id="emailPaciente" placeholder="Digite seu e-mail">
+                    <br>
+                    <label for="senhaPaciente" id="labelsenhaPaciente">Senha:</label>
+                    <input type="password" id="senhaPaciente" placeholder="Digite sua senha">
+                    <br>
+                    <button type="button" onclick="" id="buttonLoginPaciente">Entrar como Paciente</button>
+                </form>
+            </div>
+            <div class="formularioLoginMedico">
+                <h2>Login de Médico</h2>
+                <form>
+                    <label for="emailMedico" id="labelemailMedico">E-mail:</label>
+                    <input type="email" id="emailMedico" placeholder="Digite seu e-mail">
+                    <br>
+                    <label for="senhaMedico" id="labelemailMedico">Senha:</label>
+                    <input type="password" id="senhaMedico" placeholder="Digite sua senha">
+                    <br>
+                    <button type="button" onclick="" id="buttonLoginMedico">Entrar como Médico</button>
+                </form>
+            </div>
+        </div>
+        <div class="containerSubTitulos">
+            <h1>Cadastrar</h1>
+        </div>
+            <div class="containerCadastro">
+                <div class="formularioCadastroPaciente">
+                    <h2>Cadastro de Usuário</h2>
+                    <form>
+                        <label for="nomeCadastroPaciente" id="labelcadastronomePaciente">Nome:</label>
+                        <input type="text" id="nomeCadastroPaciente" placeholder="Digite seu nome">
+                        <br>
+                        <label for="emailCadastroPaciente" id="labelcadastroemailPaciente">E-mail:</label>
+                        <input type="email" id="emailCadastroPaciente" placeholder="Digite seu e-mail">
+                        <br>
+                        <label for="senhaCadastroPaciente" id="labelcadastrosenhaPaciente">Senha:</label>
+                        <input type="password" id="senhaCadastroPaciente" placeholder="Digite sua senha">
+                        <br>
+                        <button type="button" onclick="" id="buttonCadastroPaciente">Cadastrar</button>
+                    </form>
+                </div>
+                <div class="formularioCadastroMedico">
+                    <h2>Cadastro de Médicos</h2>
+                    <form>
+                        <label for="nomeCadastroMedicos" id="labelcadastronomeMedico">Nome:</label>
+                        <input type="text" id="nomeCadastroMedicos" placeholder="Digite seu nome">
+                        <br>
+                        <label for="emailCadastroMedicos" id="labelcadastroemailMedico">E-mail:</label>
+                        <input type="email" id="emailCadastroMedicos" placeholder="Digite seu e-mail">
+                        <br>
+                        <label for="senhaCadastroMedicos" id="labelcadastrosenhaMedico">Senha:</label>
+                        <input type="password" id="senhaCadastroMedicos" placeholder="Digite sua senha">
+                        <br>
+                        <button type="button" onclick="" id="buttonCadastroMedico">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
