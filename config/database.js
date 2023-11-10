@@ -1,6 +1,6 @@
 const sqlite3 = require('sqlite3').verbose();
 
-const caminhoBanco = './caminho/do/seu/banco.db';
+const caminhoBanco = "banco_consultorioMedico.db";
 
 const banco = new sqlite3.Database(caminhoBanco, (err) => {
   if (err) {
